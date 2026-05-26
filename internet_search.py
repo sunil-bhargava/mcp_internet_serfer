@@ -41,4 +41,4 @@ def search_internet(query: str, max_results: int = 5) -> str:
 
 if __name__ == "__main__":
     # FastMCP handles transport internally when run is called
-    mcp.run()
+    mcp.run(transport="http", host="0.0.0.0", port=8000)
